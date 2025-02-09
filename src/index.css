@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root {
+  --main-color: hsl(120, 89%, 36%);
+  --light-color: #f0f3f2;
+  --shadow:  1px 1px 10px hsl(120, 36%, 48%);
+  --font-family: 'Encode Sans Expanded', sans-serif;
+  --rating-color: #ffc908;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: var(--main-color);
+}
+.pr,
+.rating-color {
+  color: #ffc908 !important;
+}
+.product{
+  transition: all .5s;
+    cursor: pointer;
+   box-shadow: 0px 0px 3px hsl(120, 36%, 48%);
+}
+.product:hover {
+  box-shadow: var(--shadow);
+}
+
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.text-main-light {
+  color: var(--light-color);
+}
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+button{
+  @apply px-3.5 py-1.5 mx-1 my-2 rounded-lg bg-green-500 text-white hover:bg-green-600 focus:ring-2 focus:ring-green-700;
+  
+}
+.active{
+  color: var(--main-color);
+
+}
+.backGround-light{
+  background-image: url(assets/images/bg.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* min-height: 100vh; */
+  
+}
