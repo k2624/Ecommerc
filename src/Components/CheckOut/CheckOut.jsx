@@ -23,6 +23,8 @@ export default function CheckOut() {
         { shippingAddress },
         { headers }
       );
+      console.log(data);
+      
       toast.success('Checkout Successful');
       window.location.href = data.session.url;
     } catch (err) {
