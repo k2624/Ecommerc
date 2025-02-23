@@ -1,8 +1,8 @@
 {
-  "name": "E-commerceWebsite",
+  "name": "Ecommerc",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://k2624.github.io/E-commerceWebsite",
+  "homepage": "https://k2624.github.io/Ecommerc",
   "type": "module",
   "scripts": {
     "dev": "vite",
